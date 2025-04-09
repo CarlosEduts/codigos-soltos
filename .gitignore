@@ -1,0 +1,2 @@
+# Ignorando arquivos transpilados do ts para js
+typescript/**/*.js
