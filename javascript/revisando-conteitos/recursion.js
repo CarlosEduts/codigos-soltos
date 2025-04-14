@@ -1,6 +1,6 @@
 // Recursão
 
-// Ex. Básico
+// Ex. Básico - função fatorial
 function fatorial(n) {
   if (n === 0 || n === 1) {
     return 1;
