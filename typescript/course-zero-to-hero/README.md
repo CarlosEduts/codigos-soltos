@@ -5,7 +5,7 @@ Este repositório contém as anotações mais importantes que fiz durante o curs
 ## 📁 Organização
 
 Os arquivos estão nomeados de acordo com a numeração das aulas.  
-Exemplo: `#12_bigint.ts` → corresponde à aula 12 sobre `bigint`.
+Exemplo: `12_bigint.ts` → corresponde à aula 12 sobre `bigint`.
 
 Cada arquivo contém implementações feitas por mim com base no conteúdo apresentado na respectiva aula.
 
