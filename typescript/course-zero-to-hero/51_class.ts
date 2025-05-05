@@ -2,6 +2,7 @@
 // Lista de vídeos relacionados:
 //   https://youtu.be/tKVsXBMYm1g?si=n77D93y-ohLlTu92
 //   https://youtu.be/kHzkhKMNyEI?si=GFVajpJZSBWfweFv
+//   https://youtu.be/AFYCxTnVQbM?si=kW2Dr2fpUl8OY2wO
 
 // Exemplo 01 - Uso Básico
 class Pessoa {
@@ -56,3 +57,31 @@ const estudante = new EstudanteMaisCurso(
 );
 
 console.log(estudante.verDados());
+
+// Exemplo 03 - Get e Set
+class Animal {
+  private _name: string;
+  private _age: number;
+
+  public set setName(name) {
+    this._name = name;
+  }
+
+  public set setAge(age) {
+    this._age = age;
+  }
+
+  public get getName() {
+    return this._name;
+  }
+
+  public get getAge() {
+    return this._age;
+  }
+}
+
+const animal = new Animal();
+animal.setName = "Rex";
+animal.setAge = 2;
+
+console.log(`Nome: ${animal.getName}, Idade: ${animal.getAge}`);
