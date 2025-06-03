@@ -103,7 +103,7 @@ console.log(Funcionario.contratacoes); // Resultado: 2
 
 // Exemplo 05 - Membros Estáticos Privados
 class Cachorro {
-  public static QUANTIDADE_DE_CACHORROS = 0;
+  private static QUANTIDADE_DE_CACHORROS = 0;
 
   constructor(public nome: string, public idade: number) {
     Cachorro.QUANTIDADE_DE_CACHORROS++;
