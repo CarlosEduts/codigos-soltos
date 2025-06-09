@@ -39,3 +39,25 @@ class myPet implements IPet {
 
 const pitoco = new myPet("Pitoco", 3);
 console.log(pitoco.eat("Ração para Cachorro"));
+
+// --> Exemplo 03: Extensão de Interfaces
+interface FullUser {
+  name: string;
+  email: string;
+  password: string;
+}
+
+type PublicUser = Omit<FullUser, "password">; // Usando Omit para criar um novo tipo sem a propriedade 'senha'
+
+const userDb: FullUser = {
+  name: "João Silva",
+  email: "joao.silva@example.com",
+  password: "mySuperSecretPassword123",
+};
+
+const userForFrontend: PublicUser = {
+  name: userDb.name,
+  email: userDb.email,
+};
+
+console.log(userForFrontend);
